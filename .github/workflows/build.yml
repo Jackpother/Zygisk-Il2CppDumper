@@ -27,7 +27,7 @@ jobs:
     - name: Construir Release
       run: ./gradlew :module:assembleRelease
     - name: Subir Artifacto
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: zygisk-il2cppdumper
         path: out/magisk_module_release/
